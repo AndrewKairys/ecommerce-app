@@ -7,16 +7,14 @@ class Product {
     this.instock = productJSON.instock
   }
 
-  renderLi() {
-    return `<div class="row">
-      <div class="col s3 m4 l3">
+  renderCard() {
+    return `<div class="col">
         <div class="card grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">${this.name}</span>
             <p>Description: ${this.description} </p>
               <p>Price: ${this.price}</p>
               <p>Instock: ${this.instock}</p>
-
             </div>
           </div>
         </div>

@@ -4,18 +4,6 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
- .container {
-  width: 960px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
- #products-content {
-  display: grid;
-  left: 50%;
-  top: 50%;
-}
-
 .materialize-red {
   background-color: #e51c23 !important;
 }

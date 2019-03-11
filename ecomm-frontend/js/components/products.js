@@ -8,6 +8,20 @@ class Products {
 
   initbindEventListeners() {
     this.productsContainer = document.getElementById('products-container')
+    this.newProduct
+    this.productForm = document.getElementById('new-product-form')
+    this.productForm.addEventListener('submit', this.createProduct)
+  }
+
+  createProduct(e) {
+    e.preventDefault()
+    const value = this.newProduct.value
+
+    this.adapter.createProduct(value).then(product => {
+      this.notes.push(new Product(product))
+      this.newProduct.value = ''
+      this.render()
+    })
   }
 
   fetchAndLoadProducts() {
